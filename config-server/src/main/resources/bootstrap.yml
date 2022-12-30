@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/eno-lc/configurations
+          default-label: main
+          username: eno-lc
+          password: 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
+          clone-on-start: true
+      fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
